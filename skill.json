@@ -1,0 +1,30 @@
+{
+  "name": "genpark-crustdata-recruiter-screening-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Crustdata job matching and resume evaluation classifier.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "recruiting",
+    "screening",
+    "crustdata"
+  ],
+  "inputs": {
+    "resume_text": {
+      "type": "string"
+    },
+    "job_requirements": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "match_score": {
+      "type": "number"
+    },
+    "fit_verdict": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
